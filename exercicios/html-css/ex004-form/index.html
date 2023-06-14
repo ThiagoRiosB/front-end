@@ -4,34 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício Formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+          color: darkblue;
+          text-align: center;  
+        }
+
+        #geral {
+           background-color: rgb(188, 218, 228);
+           padding: 10px; 
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           
+        }
+
+        section {
+            width: 400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .inp {
+            width: 200px;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        input {
+            border-radius: 5px;
+            border: none;
+        }
+        
+    </style>
 </head>
 <body>
-    <h1>Formulário de Cadastro</h1>
+    <h1>Formulário de cadastro</h1>
     <form action="#" method="get">
-        <div>
-           <label for="nome">Nome: </label> 
-           <input type="text" name="nome" id="nome">
-        </div><br>
-        <div>
-            <label for="dataNascimento">Data de Nascimento: </label>
-            <input type="date" name="dataNascimento" id="dataNascimento">
-        </div><br>
-        <div>
-            <label for="cpf">CPF: </label>
-            <input type="number" name="cpf" id="cpf">
-        </div><br>
-        <div>
-            <label for="cpf">Município: </label>
-            <select name="municipios" id="municipios">
-                <option value="" selected>---Escolha---</option>
-                <option value="viamao">Viamão</option>
-                <option value="portoAlegre">Porto Alegre</option>
-                <option value="alvorada">Alvorada</option>
-                <option value="canoas">Canoas</option>
-                <option value="pelotas">Pelotas</option>
-                <option value="santaCruz">Santa Cruz</option>
-            </select>
-        </div><br>
+        <fieldset>
+            <legend>Preencha os dados</legend>
+        <div id="geral">
+            <section>
+               <label for="nome">Nome: </label>
+               <div class="inp"><input type="text" name="nome" id="nome"></div>
+            </section><br>
+            <section>
+                <label for="dataNascimento">Data de Nascimento: </label>
+                <div class="inp"><input type="date" name="dataNascimento" id="dataNascimento"></div>
+            </section><br>
+            <section>
+                <label for="cpf">CPF: </label>
+                <div class="inp"><input type="number" name="cpf" id="cpf"></div>
+            </section><br>
+            <section>
+                <label for="cpf">Município: </label>
+                <div class="inp">
+                    <select name="municipios" id="municipios">
+                        <option value="" selected>---Selecione---</option>
+                        <option value="viamao">Viamão</option>
+                        <option value="portoAlegre">Porto Alegre</option>
+                        <option value="alvorada">Alvorada</option>
+                        <option value="canoas">Canoas</option>
+                        <option value="pelotas">Pelotas</option>
+                        <option value="santaCruz">Santa Cruz</option>
+                    </select>
+                </div>
+            </section><br>
+        </div>
+    </fieldset>
     </form>
 </body>
 </html>
