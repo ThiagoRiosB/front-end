@@ -4,50 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 05</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <header>
-    <section>
-        <img src="imagens/img-01.png" alt="imgLogo">
-    </section>
-
-    <section>
-        <select name="idioma" id="idIdioma">
-            <option value="portugues">Português</option>
-            <option value="ingles">Inglês</option>
-            <option value="espanhol">Espanhol</option>
-            <option value="alemao">Alemão</option>
-            <option value="frances">Francês</option>
-       </select>
-       <input type="submit" value="Entrar">
+    <section id="secao01">
+        <div><img src="imagens/img-01.png" alt="imgLogo" id="imgLogo"></div>
+    
+        <div>
+            <select name="idioma" id="idIdioma">
+                <option value="portugues" class="opcao">Português</option>
+                <option value="ingles" class="opcao">Inglês</option>
+                <option value="espanhol" class="opcao">Espanhol</option>
+                <option value="alemao" class="opcao">Alemão</option>
+                <option value="frances" class="opcao">Francês</option>
+                   </select>
+                   <button id="entrar">Entrar</button>
+        </div>
    </section>
 
-   <section>
-    <h1>Filmes, séries e muito mais. Sem limites.</h1>
-    <p>Assista onde quiser e quando quiser.</p>
-    <p>Pronto para assistir? Pesquise seu filme favorito.</p>
-    <input type="text" name="pesquisar" id="idPesquisar">
-    <input type="submit" value="Pesquisar">
-   </section>
+   <section id="secaoPesquisar">
+    <h1 class="pesquisarText">Filmes, séries e muito mais. <br>Sem limites.</h1><br><br>
+    <p class="pesquisarText">Assista onde quiser e quando quiser.</p><br>
+    <p class="pesquisarText">Pronto para assistir? Pesquise seu filme favorito.</p><br>
+    <div id="pesquisar">
+        <input type="text" name="pesquisar" id="inpPesquisar">
+        <button id="botaoPesquisar">Pesquisar</button>
+    </div>
+   </section><br>
    </header> 
+   <hr>
 
    <main>
-    <section>
-        <h1>Aproveite em todo lugar!</h1>
-        <p>Assista na TV, XBox, Celular e em qualquer outro dispositivo.</p>
-        <img src="imagens/img-02.jpg" alt="imgFilmes">
-    </section>
+    <section id="secao02">
+        <div>
+            <h1>Aproveite em todo lugar!</h1><br>
+            <p>Assista na TV, XBox, Celular e em qualquer outro dispositivo.</p>
+        </div>
+        <div><img src="imagens/img-02.jpg" alt="imgFilmes" id="imgFilmes"></div>
+    </section><br>
+    <hr>
 
-    <section>
-        <img src="imagens/img-03.jpg" alt="imgCelular">
-        <h1>Baixe séries para assistir offline!</h1>
-        <p>Salve seus títulos favoritos e sempre tenha algo para assistir</p>
+    <section id="secao03">
+        <div><img src="imagens/img-03.jpg" alt="imgCelular" id="imgCelular"></div>
+        <div>
+            <h1>Baixe séries para assistir offline!</h1><br>
+            <p>Salve seus títulos favoritos e sempre tenha algo para assistir</p>
+        </div>
     </section>
+    <hr>
+    <section id="secao04">
+        <h1>Vantagens</h1><br>
 
-    
-   </main>
+        <div id="pSecao04">
+            <p class="sombra">Baixo custo</p>
+            <p class="sombra">Assistir em todo lugar</p>
+            <p class="sombra">Cancelamento facilitado</p>
+            <p class="sombra">Muito conteúdo</p>
+        </div>
+    </section>
+    </main>
+
    <footer>
+       <section id="footer01">
+        <p>Perguntas frequentes</p>
+        <p>Relação com investidores</p>
+        <p>Formas de assistir</p>
+        <p>Informações corporativas</p>
+       </section> 
 
+       <section id="footer02">
+        <p>Central de ajuda</p>
+        <p>Carreiras</p>
+        <p>Termos de uso</p>
+        <p>Entre em contato</p>
+       </section>
+
+       <section id="footer03">
+        <p>Conta</p>
+        <p>Privacidade</p>
+        <p>Pagamentos</p>
+        <p>Ouvidoria</p>
+       </section>
+
+       <section id="footer04">
+        <p>Media center</p>
+        <p>Preferências</p>
+        <p>Avisos legais</p>
+        <p>Outros</p>
+       </section>
    </footer>
 </body>
 </html>
